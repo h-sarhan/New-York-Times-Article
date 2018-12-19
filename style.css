@@ -1,0 +1,92 @@
+.navbar {
+  position: fixed;  
+  z-index: 1;
+  background-color: white;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40px 40px 150px 1fr 0.14fr 0.1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+  border-bottom: 1px solid rgb(161, 161, 161);
+
+}
+
+.navbar .header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.navbar .logo img {
+  height: 26px;
+  width: 196px;
+}
+.navbar button {
+  border: 1px solid #326891;
+  background-color: #6288a5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 13px;
+  margin: 0;
+}
+
+.navbar .subscribe {
+  justify-self: flex-end;
+}
+.navbar .log-in {
+  justify-self: flex-start;
+}
+.main{
+    position: relative;
+    top: 100px;
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-auto-rows: auto;
+}
+.title{
+    grid-column-start: 2;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+    font-size: 32px;
+    font-weight: 800;
+}
+.img-1{
+    grid-column-start: 2; 
+    width:1000px;
+    height:600px;
+}
+.main .caption{
+    grid-column-start: 2;
+    font-size: 18px;
+    font-weight:200;
+}
+.main p{
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;;
+    grid-column-start: 2;
+    font-size: 26px;
+    margin: 0 100px;
+}
+.main p::before{
+    content:"\A";
+    white-space: pre;
+
+}
+
+.main .quote{
+    font-size: 30px;
+    font-weight: 800;
+    grid-column-start: 2;
+    margin: 50px 100px;
+}
+.theory{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-start: 2;
+    
+}
+.theory p{
+    grid-column-start: auto;
+    font-size: 16px;
+    margin: 0 50px;
+}
